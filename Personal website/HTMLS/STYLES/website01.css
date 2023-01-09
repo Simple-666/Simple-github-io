@@ -1,0 +1,215 @@
+/*初始化*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#firstbody {
+    padding: 0px 1px;
+    background-color: yellowgreen;
+}
+
+/*头部导航开始*/
+#headerbox {
+    padding: 7px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.tp01 {
+    width: 36px;
+    height: 36px;
+    margin: auto;
+}
+
+.header-ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 7px;
+}
+
+.header-li {
+    float: left;
+    margin-left: 2rem;
+    padding: 7px;
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 18px;
+    margin-left: 3rem;
+    margin-top: 2px;
+    color: rgba(190, 142, 186, 0.679);
+}
+
+a:hover {
+    background-color: rgba(190, 142, 186, 0.479);
+    color: wheat;
+}
+
+/*动态搜索框*/
+.search-box {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.searchbox01 {
+    position: relative;
+    display: inline-block;
+    width: 210px;
+}
+
+.search01 {
+    width: 70px;
+    height: 39px;
+    border-radius: 23px;
+    transition: width .4s;
+    margin-top: 5px;
+    border: none;
+    background-color: rgba(193, 219, 195, 0.548);
+}
+
+.search-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    background-color: rgba(61, 100, 63, 0.648);
+    border: none;
+}
+
+.search01:hover {
+    width: 100%;
+}
+
+::placeholder {
+    color: rgb(22, 21, 21);
+    font-size: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.searchimg {
+    width: 20px;
+}
+
+/*头部导航结束*/
+
+
+/*轮播图开始*/
+.carouselbox01 {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-ul {
+    list-style-type: none;
+    width: 400%;
+    height: 1000px;
+
+}
+
+.carousel-li {
+    width: 25%;
+    height: 1000px;
+    float: left;
+}
+
+.tp02 {
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+}
+
+/*轮播点*/
+.carouselpoint-ul {
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.carouselpoint-li {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(38, 41, 39, 0.453);
+    border-radius: 20px;
+    margin: 0px 18px;
+}
+
+/*轮播图结束*/
+
+@media screen and (max-width:400px) {
+
+    .tp02,
+    .carouselbox01 {
+        width: 100%;
+        height: 270px;
+    }
+
+    .carouselpoint-li {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(209, 149, 149, 0.739);
+    }
+}
+
+/*轮播图和导航媒体查询结束*/
+
+.middlebox01 {
+    background-color: #000;
+}
+
+h2 {
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.bodybox02 {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middlebox2,
+.middlebox3,
+.middlebox4,
+.middlebox5 {
+    background-color: aqua;
+    width: 49%;
+    height: 500px;
+    margin: 6px auto 4px;
+}
+
+.tp03 {
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width:400px) {
+
+    .middlebox2,
+    .middlebox3,
+    .middlebox4,
+    .middlebox5,
+    .tp03 {
+        width: 100%;
+        height: 300px;
+    }
+}
